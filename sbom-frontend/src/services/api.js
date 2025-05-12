@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// Use localhost for development
-const API_BASE_URL = 'http://localhost:5000'; 
+// Use environment variable for API base URL, fallback to localhost for development
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://sbom-finder-app.onrender.com'; 
 
 console.log('Using API URL:', API_BASE_URL);
 
